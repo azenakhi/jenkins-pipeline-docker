@@ -1,14 +1,12 @@
 pipeline {
-  agent none
+  agent { docker 'nginx:latest' }
   stages {
     stage('Test') {
-      agent any
       steps {
         sh 'ls'
       }
     }
     stage('Install') {
-      agent any
       steps {
         sh 'echo'
       }
