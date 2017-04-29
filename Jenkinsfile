@@ -1,10 +1,14 @@
 pipeline {
   stages {
     stage('Test') {
-      sh 'ls'
+      steps {
+        sh 'ls'
+      }
     }
     stage('Install') {
-      sh 'echo'
+      steps {
+        sh 'echo'
+      }
     }
   }
 }
